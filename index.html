@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Milestone 3</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    
+    <body class="container">
+        <label align="left" id="Titre"> Fibonnaci Calculator </label>
+    
+        <form name="form1" method="post">
+            <div>
+                <label id="content"> The Fibonnaci Of </label>
+                <input name="textN" id="textN" type="text" size="5">
+                <input type="button" name="Submit" value="Is" onclick="AffFibo()" class="btn btn-primary btn-sm mb-2"
+                    id="buttonIs">
+                <output class="font-weight-bold" name="FibN" type="text" value=""></output>
+                <div class="spinner-border d-none" id="spinner" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <span class="d-none small col-2" style="color: red" id="42-error" role="alert">
+                    Server Error: 42 is the meaning of life
+                </span>
+            </div>
+    
+            <div class="alert alert-danger d-none small p-1" style="width: fit-content; margin-left: 3.4rem;" id="error-msg"
+                role="alert">
+                Can't be larger than 50
+            </div>
+    
+            <div>
+                <input type="checkbox" name="saveCalc" id="save-calc">
+                <label>Save Calculation</label>
+            </div>
+        </form>
+    
+        <h2 class="mt-4">Results</h2>
+        <select class="mt-2 mb-5" id="sort">
+            <option value="" selected>Sort By</option>
+            <option value="number-asc">Number Asc</option>
+            <option value="number-desc">Number Desc</option>
+            <option value="date-asc">Date Asc</option>
+            <option value="date-desc">Date Desc</option>
+        </select>
+        <ul id="result-list"></ul>
+    
+    
+        <script src="script.js"></script>
+    </body>
+    
+    </html>

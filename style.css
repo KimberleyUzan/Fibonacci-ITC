@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Open+Sans:wght@600&display=swap');
+
+#Titre {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 79px;
+    color: #373A3C;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+#content {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #373A3C;
+}
+
+output {
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: underline !important;
+}
+
+#buttonIs {
+    margin-top: 5px;
+}
+
+#textN.error {
+    border: 1px solid rgb(229, 41, 41);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+}
